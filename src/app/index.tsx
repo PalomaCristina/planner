@@ -1,5 +1,5 @@
 import { View, Text, Image } from "react-native";
-
+import clsx  from "clsx";
 import { Input } from "@/components/input";
 
 export default function Index(){
@@ -15,7 +15,7 @@ export default function Index(){
         </Text>
         <View>
             <Input>
-            <Input.Field />
+            <Input.Field placeholder="Para onde?"/>
             </Input>
         </View>
         </View>
