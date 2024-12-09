@@ -2,6 +2,7 @@ import { View, Text, Image } from "react-native";
 import { Input } from "@/components/input";
 import { MapPin, Calendar as  CalendarIcon} from "lucide-react-native";
 import { colors } from "@/styles/colors";
+import { Button } from "@/components/button";
 
 export default function Index(){
     return (
@@ -19,10 +20,13 @@ export default function Index(){
             <MapPin color={colors.zinc[400]} size={20} />
             <Input.Field placeholder="Para onde?"/>
             </Input>
-            <View className="border-b py-3 border-zinc-800"></View>
             <Input>
             <CalendarIcon color={colors.zinc[400]} size={20} />
-            <Input.Field placeholder="Para onde?"/>
+            <Input.Field placeholder="Quando?"/>
+            
+            <View className="border-b py-3 border-zinc-800">
+                <Button.Title>Alterar local/data</Button.Title>
+            </View>
             </Input>
         </View>
         </View>
