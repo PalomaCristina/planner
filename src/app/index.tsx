@@ -39,7 +39,7 @@ export default function Index() {
       <View className="w-full bg-zin-900 p-4 rounded-xl my-8 border border-zinc-800">
         <Input>
           <ClipboardList color={colors.zinc[400]} size={20} />
-          <Input.Field placeholder="O que fazer?" editable={stepForm === StepForm.TASK_DETAILS} />
+          <Input.Field placeholder="Adicione uma tarefa" editable={stepForm === StepForm.TASK_DETAILS} />
         </Input>
 
         <Input>
